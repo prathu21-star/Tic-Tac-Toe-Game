@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #ff416c, #03defb);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#player-names {
+  margin-bottom: 20px;
+}
+
+#player-names input {
+  margin-right: 10px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: lightblue;
+}
+
+#reset-btn {
+  font-size: 20px;
+  margin-top: 10px;
+  display: none;
+}
